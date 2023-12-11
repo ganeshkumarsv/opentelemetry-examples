@@ -74,8 +74,7 @@ jobs:
       if: matrix.language == 'java-kotlin'
       run: |
         echo "Run Gradle build"
-        gradle -p apps/kafka-redis-messages/otel/calendar-producer-java-otel build
-        # find . -name 'build.gradle' -execdir ./gradlew build \;
+        find . -name 'build.gradle' -execdir ./gradlew build \;
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
