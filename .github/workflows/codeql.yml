@@ -66,7 +66,8 @@ jobs:
       with:
         dotnet-version: '8.0.x'
     - run: |
-        dotnet build apps/rest-services/dotnet/RandomDateAPI        
+        dotnet build apps/rest-services/dotnet/RandomDateAPI
+        dotnet build apps/rest-services/dotnet/RandomDateAPIOTel
     # Autobuild attempts to build any compiled languages (C/C++, C#, Go, Java, or Swift).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Build with Gradle (for Java)
